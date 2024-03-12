@@ -1,9 +1,9 @@
 nome = input("Digite seu nome: ")
 conceito = input("Digite qual o seu conceito: ")
-match conceito:
-    case "a"|"A":
+match conceito.upper():
+    case "A":
         print(f"{nome}: Fortemente recomendado.")
-    case "b"|"B"|"c"|"C":
+    case "B"|"C":
         print(f"{nome}: Recomendado.")
-    case "d"|"D":
+    case "D":
         print(f"{nome}: Não recomendado.")
