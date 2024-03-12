@@ -1,8 +1,8 @@
 salarioMinimo = 1412
 totalVendas = float(input("Digite o valor total das vendas: "))
-salario = totalVendas * 0.05
+comissao = totalVendas * 0.05
 
-if salario < salarioMinimo:
+if comissao < salarioMinimo:
     print(f"Salário: R${salarioMinimo}")
 else:
-    print(f"Salário: R${salario}")
+    print(f"Salário: R${comissao}")
