@@ -10,7 +10,6 @@ elif num2 > num3:
 else:
     print(num3)
 
-
 lista = []
 for i in range(1,4):
     num = float(input(f"Digite o número {i}: "))
