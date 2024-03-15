@@ -9,14 +9,3 @@ resto5 = resto10 % 5
 um = resto5 // 1
 
 print(f"{cinquenta} nota de B$50\n{dez} notas de B$10\n{cinco} notas de B$5\n{um} notas de B$1")
-
-
-print("-" * 40)
-
-
-cinquenta = dinheiroInicial // 50
-dez = (dinheiroInicial % 50) // 10
-cinco = (dez % 10) // 5
-um = (dez % 10) // 1
-
-print(f"{cinquenta} nota de B$50\n{dez} notas de B$10\n{cinco} notas de B$5\n{um} notas de B$1")
