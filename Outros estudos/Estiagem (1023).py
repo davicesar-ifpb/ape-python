@@ -34,5 +34,5 @@ while True:
     print(f"Cidade# {cidade}:")
     for c,p in lista:
         print(f"{p}-{c}",end=" ")
-    print(f"\nConsumo medio: {(consumo_medio_truncado):.2f} m3.")
+    print(f"\nConsumo medio: {(consumo_medio_truncado):.2f} m3.\n")
     cidade += 1
