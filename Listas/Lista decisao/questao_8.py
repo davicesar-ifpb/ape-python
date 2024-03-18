@@ -6,18 +6,18 @@ while True:
     match operacao:
         
         case "+":
-            print(f"{num1} + {num2} = {num1 + num2}")
+            print(f"{num1 + num2 = }")
         case "-":
-            print(f"{num1} - {num2} = {num1 - num2}")
+            print(f"{num1 - num2 = }")
         case "x"|"*":
-            print(f"{num1} * {num2} = {num1 * num2}")
+            print(f"{num1 * num2 = }")
         case "^": 
             print(f"{num1} ^ {num2} = {num1 ** num2}")
         case "/":
             if num2 == 0:
                 print("Divisão por 0.")
             else:
-                print(f"{num1} / {num2} = {num1 / num2}")
+                print(f"{num1 / num2 = }")
         
         case "%":
             print(f"{num1} % {num2} = {num1 * (num2 / 100)}")
