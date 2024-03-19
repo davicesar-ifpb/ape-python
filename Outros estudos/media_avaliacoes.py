@@ -1,19 +1,21 @@
 nota0 = 0
 
 while True:
-    try:
-        quantidade = int(input("Digite a quantidade de notas: "))
-        break
-    except ValueError:
+    quantidade = input("Digite a quantidade de notas: ")
+    if not quantidade.isdigit():
         print("\nDigite um número inteiro.\n")
-    
+    else:
+        quantidade = int(quantidade)
+        break
+
 for i in range(1, (quantidade + 1)):
     while True:
-        try:
-            nota1 = float(input(f"Digite a nota da avaliação {i}: "))
+        nota1 = input(f"Digite a nota da avaliação {i}: ")
+        if not nota1.isdigit():
+                print("\nDigite um número.\n")
+        else:
+            nota1 = float(nota1)
             nota0 = nota0 + nota1
             break
-        except ValueError:
-            print("\nDigite um número.\n")
-
+        
 print(f"\nMédia das avaliações é {(nota0 / quantidade):.1f}\n")
