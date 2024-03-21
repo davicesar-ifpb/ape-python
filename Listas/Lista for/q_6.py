@@ -12,6 +12,6 @@ else:
     y += 1
 
 for i in range(x,y,passo):
-    if i % 5 == 0:
+    if i % n == 0:
         print(i)
         
