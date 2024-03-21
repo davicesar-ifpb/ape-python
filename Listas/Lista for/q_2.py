@@ -5,4 +5,4 @@ entrada = int(input())
 soma = 0
 for i in range(1,entrada+1):
     soma += i
-print(soma)
+print(f"{soma = }")

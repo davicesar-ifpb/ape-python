@@ -6,8 +6,7 @@ entrada = int(input())
 for i in range(1,entrada+1):
     if entrada == 1:
         print("Não é primo")
-        break
-    
+        break   
     if entrada % i == 0 and entrada == i:
         print("É primo")
         break
@@ -33,4 +32,4 @@ def primos(quantidade):
                 break
         j += 1
         
-# primos(50)
+#primos(50)

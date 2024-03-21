@@ -19,13 +19,8 @@ for i in range(entrada):
         else:
             print('Sexo invalido.')
 
-if femeas > machos:
-    percentual_femeas = machos/femeas * 100
-    percentual_machos = 100 - percentual_femeas
-    
-else:
-    percentual_machos = femeas/machos * 100
-    percentual_femeas = 100 - percentual_machos
-    
+percentual_femeas = femeas / (femeas + machos) * 100
+percentual_machos = machos / (femeas + machos) * 100
+
 print(f"\nMulheres = {percentual_femeas:.1f} %")
 print(f"Homens = {percentual_machos:.1f} %")

@@ -10,10 +10,9 @@ print(lista[-1])
 
 # ------------------------------
 
-entrada = 0           
-a = entrada            # <------ Sem lista
-for i in range(20):
+maior = int(input())   # <------ Sem lista
+for i in range(19):
     entrada = int(input())
-    if entrada > a:
-        a = entrada
-print(a)
+    if entrada > maior:
+        maior = entrada
+print(maior)
