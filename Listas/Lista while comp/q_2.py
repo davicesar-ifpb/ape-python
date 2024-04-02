@@ -1,6 +1,6 @@
 def primos(quantidade):
     j = 1    
-    while j <= quantidade:
+    for j in range(1,quantidade+1):
         for i in range(1,j+1):
             if j == 1:
                 print(f"{j} Não é primo")
@@ -14,4 +14,5 @@ def primos(quantidade):
                 break
         j += 1
         
-primos(50)
+n = int(input("Valor de N: "))
+primos(n)
