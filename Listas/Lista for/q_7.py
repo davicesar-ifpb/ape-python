@@ -32,4 +32,4 @@ def primos(quantidade):
                 break
         j += 1
         
-#primos(50)
+primos(50)
