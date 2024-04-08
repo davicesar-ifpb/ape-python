@@ -38,13 +38,10 @@ def qual_base(texto):
             base_inicial_ou_final = bases.get(entrada)
             if base_inicial_ou_final == None:
                 base_inicial_ou_final = entrada
-            break          
+            return base_inicial_ou_final          
         else:
             os.system("cls")
             print(f"Erro. Bases disponíveis: [decimal (10) / binario (2) / hexadecimal (16)]")
-    
-    return base_inicial_ou_final
-
 
 while True:
     base_inicial = qual_base("De qual base é o número que você quer converter? ")
