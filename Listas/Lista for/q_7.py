@@ -18,9 +18,9 @@ def primos_n_unico_1(entrada: int):
     
 def primos_n_unico_2(entrada: int):
     #entrada = int(input())
-    if entrada == 2:
+    if entrada == 2 or entrada == 3:
         print("É primo")
-    elif entrada % 2 == 0:
+    elif entrada % 2 == 0 or entrada == 1:
         print("Não é primo")
     else:
         for i in range(3,entrada,2):
