@@ -1,5 +1,6 @@
-# Faça um programa que leia um número N, inteiro, e some todos os números
-# de 1 até N, mostrando o resultado.
+""" Faça um programa que leia um número N, inteiro, e some todos os números
+de 1 até N, mostrando o resultado. """
+
 
 entrada = int(input())
 soma = 0

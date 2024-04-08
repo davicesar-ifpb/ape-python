@@ -1,5 +1,6 @@
-# Faça um programa que leia 20 números inteiros, determine e mostre o maior
-# deles.
+""" Faça um programa que leia 20 números inteiros, determine e mostre o maior
+deles. """
+
 
 lista = []             # <------ Usando lista
 for i in range(20):

@@ -1,5 +1,6 @@
-# Faça um programa que leia 3 números inteiros (N, X, Y) e mostre todos os
-# números múltiplos de N entre X e Y.
+""" Faça um programa que leia 3 números inteiros (N, X, Y) e mostre todos os
+números múltiplos de N entre X e Y. """
+
 
 n,x,y = map(int, input().split())
 

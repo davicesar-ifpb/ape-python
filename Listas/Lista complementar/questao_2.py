@@ -1,4 +1,6 @@
-# Média ponderada
+""" Escreva um programa para calcular e exibir a média ponderada de 2 notas dadas. Sabe-
+se que nota1 possui peso 6 e nota2 possui peso 4. """
+
 
 peso1 = 6
 peso2 = 4

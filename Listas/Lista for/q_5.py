@@ -1,7 +1,8 @@
-# Faça um programa que, para um grupo de N pessoas (obs: N será lido):
-# • Leia o sexo (M ou F) de cada pessoa;
-# • Calcule e escreva o percentual de homens;
-# • Calcule e escreva o percentual de mulheres.
+""" Faça um programa que, para um grupo de N pessoas (obs: N será lido):
+• Leia o sexo (M ou F) de cada pessoa;
+• Calcule e escreva o percentual de homens;
+• Calcule e escreva o percentual de mulheres. """
+
 
 entrada = int(input("Digite a quantidade de pessoas: "))
 
