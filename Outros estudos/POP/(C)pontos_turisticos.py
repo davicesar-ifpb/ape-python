@@ -1,6 +1,6 @@
 casos = int(input())
 
-for i in range(casos):
+for _ in range(casos):
     
     a,b,c,L,R = map(int, input().split())
     
