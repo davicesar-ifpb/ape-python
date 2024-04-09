@@ -5,9 +5,8 @@ leitura da idade 0 indicará o fim dos dados de entrada), calcule e exiba:
 • Idade do visitante mais jovem. """
 
 
-idade_soma = 0
 qtd_pessoas_idades_18_21 = 0
-pessoas_geral = []
+idades_pessoas = []
 
 while True:
 
@@ -15,15 +14,14 @@ while True:
 
     if idade == 0: break
 
-    idade_soma += idade
     if 18 <= idade <= 21:
         qtd_pessoas_idades_18_21 += 1
 
-    pessoas_geral.append(idade)
+    idades_pessoas.append(idade)
 
 
-print(f"Media das idades: {idade_soma / len(pessoas_geral):.0f}")
+print(f"Media das idades: {sum(idades_pessoas) / len(idades_pessoas):.0f}")
 print(f"Quantidade pessoas entre 18 - 21: {qtd_pessoas_idades_18_21}")
-print(f"Pessoa mais nova: {sorted(pessoas_geral)[0]}")
+print(f"Pessoa mais nova: {min(idades_pessoas)}")
 
     

@@ -3,9 +3,9 @@ pelo usuário. A definição de fatorial é mostrada a seguir: """
 
 
 n = int(input())
+n2 = n
 
 # metodo 1
-n2 = n
 for i in reversed(range(1,n)):
     n = n * i
 print(n)

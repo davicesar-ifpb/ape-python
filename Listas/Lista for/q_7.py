@@ -3,7 +3,7 @@ próprio. Faça um programa que leia um número e determine se ele é ou não
 primo. """
 
 
-def primos_n_unico_1(entrada: int):
+def primos_n_unico_1(entrada: int):  # lento
     #entrada = int(input())
     for i in range(1,entrada+1):
         if entrada == 1:
@@ -16,7 +16,7 @@ def primos_n_unico_1(entrada: int):
             print("Não é primo")
             break
     
-def primos_n_unico_2(entrada: int):
+def primos_n_unico_2(entrada: int): # +rapido
     #entrada = int(input())
     if entrada == 2 or entrada == 3:
         print("É primo")

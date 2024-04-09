@@ -6,8 +6,8 @@ lista = []             # <------ Usando lista
 for i in range(20):
     entrada = int(input())
     lista.append(entrada)
-lista.sort()
-print(lista[-1])
+
+print(max(lista))
 
 # ------------------------------
 
