@@ -32,14 +32,13 @@ def main():
         print("> Para sortear digite 0.")
         entrada = input("> ").capitalize()
         
-        if entrada == "0": 
-            try:
+        if entrada == "0" and itens: 
                 sortear(itens)
-                break
-            except ValueError:
-                os.system("cls||clear")
-                print("Não foi possível sortear, não há nenhum item na lista.\n")
-                continue
+                break      
+        elif entrada == "0" and not itens:
+            os.system("cls||clear")
+            print("Não foi possível sortear, não há nenhum item na lista.\n")
+            continue
         
         if entrada in itens:
             itens.remove(entrada)
