@@ -3,7 +3,11 @@ import os
 from colorama import init, Fore
 init()
 
-sinais = [(Fore.GREEN + "Verde" , 10 ), (Fore. RESET + Fore.YELLOW + "Amarelo", 3), (Fore. RESET + Fore.RED + "Vermelho", 10)]
+sinais = [
+    (Fore.GREEN + "Verde" + Fore.RESET, 10),
+    (Fore.YELLOW + "Amarelo" + Fore.RESET, 3),
+    (Fore.RED + "Vermelho" + Fore.RESET, 10)
+]
 
 while True:
     for cor, tempo in sinais:
@@ -19,4 +23,3 @@ while True:
             tempo -= 1
             os.system('cls||clear')
             a = True
-            
