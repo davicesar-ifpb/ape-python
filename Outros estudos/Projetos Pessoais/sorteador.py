@@ -16,9 +16,9 @@ def printar_itens(itens):
 def sortear(itens):
     numero_sorteado = random.randint(0, len(itens)-1)
 
+    os.system("cls||clear")
     for i in range(1, 4):
-        os.system("cls||clear")
-        print("Sorteando", "." * i, sep="")
+        print("Sorteando", "." * i, end="\r", sep="")
         time.sleep(0.5)
 
     os.system("cls||clear")
