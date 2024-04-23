@@ -14,7 +14,7 @@ def printar_itens(itens):
 
 
 def sortear(itens):
-    numero_sorteado = random.randint(0, len(itens)-1)
+    item_sorteado = random.choice(list(itens))
 
     os.system("cls||clear")
     for i in range(1, 4):
@@ -23,7 +23,7 @@ def sortear(itens):
 
     os.system("cls||clear")
     print("Item sorteado:")
-    print(list(itens)[numero_sorteado])
+    print(item_sorteado)
 
 
 def main():
