@@ -5,12 +5,11 @@ import time
 
 
 def printar_itens(itens):
-    if itens:
-        print("Itens a serem sorteados:")
-        print("-" * 10)
-        for i in itens:
-            print(i)
-        print("-" * 10, "\n")
+    print("Itens a serem sorteados:")
+    print("-" * 10)
+    for i in itens:
+        print(i)
+    print("-" * 10, "\n")
 
 
 def sortear(itens):
@@ -30,7 +29,7 @@ def main():
     itens = set()
 
     while True:
-        printar_itens(itens)
+        if itens: printar_itens(itens)
 
         print("> Digite o nome do item para adicioná-lo aos itens a serem sorteados.")
         print("> Para remover basta digitar o nome novamente.")
@@ -40,7 +39,8 @@ def main():
         if entrada == "0" and itens:
             sortear(itens)
             break
-        elif entrada == "0" and not itens:
+        
+        if entrada == "0" and not itens:
             os.system("cls||clear")
             print("Não foi possível sortear, não há nenhum item na lista.\n")
             continue
