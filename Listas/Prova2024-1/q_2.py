@@ -5,9 +5,9 @@ mulheres = 0
 mulheres_20_solteiras = 0
 homens_30_casados = 0
 
-TOTAL = 10
+TOTAL = 100
 
-for _ in range(10): 
+for _ in range(100): 
     idade = int(input())
     sexo = input()
     estado_civil = input()
