@@ -22,7 +22,12 @@ def sortear(itens):
 
     os.system("cls||clear")
     print("Item sorteado:")
+    print("-" * 10)
     print(item_sorteado)
+    print("-" * 10)
+    
+    input("Aperte 'enter' para voltar")
+    os.system("cls||clear")
 
 
 def main():
@@ -33,18 +38,18 @@ def main():
 
         print("> Digite o nome do item para adicioná-lo aos itens a serem sorteados.")
         print("> Para remover basta digitar o nome novamente.")
-        print("> Para sortear digite 0.")
+        print("> Para sortear aperte 'enter' (deixe vazio).")
         entrada = input("> ").capitalize()
 
-        if entrada == "0" and itens:
+        if not entrada and itens:
             sortear(itens)
-            break
+            continue
         
-        if entrada == "0" and not itens:
+        if not entrada and not itens:
             os.system("cls||clear")
             print("Não foi possível sortear, não há nenhum item na lista.\n")
             continue
-
+        
         if entrada in itens:
             itens.remove(entrada)
         else:
