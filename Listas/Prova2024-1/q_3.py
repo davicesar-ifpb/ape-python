@@ -16,18 +16,14 @@ while True:
     
     if par:
         soma_pares += n
-        if maior_par == 1:
+        if maior_par == 1 or n > maior_par:
             maior_par = n
-        elif n > maior_par:
-            maior_par = n
-        
     else:
         soma_impares += n
-        if maior_impar == 0:
-            maior_impar = n
-        elif n > maior_impar:
+        if maior_impar == 0 or  n > maior_impar:
             maior_impar = n
             
+
 print(soma_impares)
 print(soma_pares)
 
