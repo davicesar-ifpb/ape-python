@@ -3,7 +3,7 @@
 soma_pares = 0
 soma_impares = 0
 maior_par = 1 # Nunca vai ser impar, por isso inicializar com valor impar (qualquer valor)
-maior_impar = 0 # Nunca vai ser par, por isso inicializar ocm valor par (qualquer valor)
+maior_impar = 0 # Nunca vai ser par, por isso inicializar com valor par (qualquer valor)
 
 while True:
     n = int(input())
@@ -30,5 +30,15 @@ while True:
             
 print(soma_impares)
 print(soma_pares)
-print(maior_impar)
-print(maior_par)
+
+if maior_impar == 0:
+    print("Não houve impares")
+else:
+    print(maior_impar)
+
+if maior_par == 1:
+    print("Não houve pares")
+else:
+    print(maior_par)
+
+    
