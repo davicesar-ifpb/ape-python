@@ -10,10 +10,10 @@ def escrever_numeros_aleatorios(arquivo: str, numeros: list):
         file.writelines(numeros)
 
 
-def randomizer(intervalo_0: int, intervalo_1: int, qtd_numeros: int):
+def randomizer(intervalo_0: int, intervalo_1: int, qtd_numeros: int, arquivo: str):
     numeros = gerar_numeros_aleatorios(intervalo_0, intervalo_1, qtd_numeros)
-    escrever_numeros_aleatorios("input.txt", numeros)
+    escrever_numeros_aleatorios(arquivo, numeros)
     
 
 if __name__ == "__main__":
-    randomizer(1, 10, 10)
+    randomizer(1, 10, 20, "input.txt")
