@@ -7,29 +7,29 @@ Entre o m e o colchete coloca as informaçoes
 
 
 # Estilos:
-0 = None (sem estilo)
-1 = **Bold (Negrito)**
-2 = Fraco 
-3 = _Itálico_
-4 = Underline (Sublinhado)
-7 = Negative (Inverter as configurações Fundo vai pra letra e letra fundo)
+0 = None (sem estilo) <br>
+1 = **Bold (Negrito)** <br>
+2 = Fraco <br>
+3 = _Itálico_ <br>
+4 = Underline (Sublinhado) <br>
+7 = Negative (Inverter as configurações Fundo vai pra letra e letra fundo) <br>
 
 # Cores de texto:
-30 = Branco
-31 = Vermelho *
-32 = Verde *
-33 = Amarelo
-34 = Azul *
-35 = Magenta
-36 = Ciano 
-37 = Cinza
+30 = Branco <br>
+31 = Vermelho * <br>
+32 = Verde * <br>
+33 = Amarelo <br>
+34 = Azul * <br>
+35 = Magenta <br>
+36 = Ciano <br> 
+37 = Cinza <br>
 
 # Cores de fundo:
-40 = Branco
-41 = Vermelho *
-42 = Verde *
-43 = Amarelo
-44 = Azul *
-45 = Magenta
-46 = Ciano
-47 = Cinza
+40 = Branco <br>
+41 = Vermelho * <br>
+42 = Verde * <br>
+43 = Amarelo <br>
+44 = Azul * <br>
+45 = Magenta <br>
+46 = Ciano <br>
+47 = Cinza <br>
