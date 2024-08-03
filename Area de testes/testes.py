@@ -8,14 +8,6 @@ def implementacao1():
 
 def implementacao2():
     lista2 = lista.copy()
-    for _ in range(lista2.count(1)):
-        lista2.remove(1)
-
-    print(lista2)
-
-
-def implementacao3():
-    lista2 = lista.copy()
     while 1 in lista2:
         lista2.remove(1)
 
@@ -24,4 +16,3 @@ def implementacao3():
 
 implementacao1()
 implementacao2()
-implementacao3()
