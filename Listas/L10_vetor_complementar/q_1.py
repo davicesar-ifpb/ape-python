@@ -1,7 +1,6 @@
 n = int(input())
 vetor = [0] * n
 
-
 qtd_pares = 0
 qtd_impares = 0
 
