@@ -19,7 +19,7 @@ soma_medias = 0
 for i in range(20):
     notas = [random.randint(0,100) for _ in range(3)] + [0]
     media = round((sum(notas) / 3), 1)
-    notas[3] = media
+    notas[-1] = media
     soma_medias += media
     matriz[i] = notas
 

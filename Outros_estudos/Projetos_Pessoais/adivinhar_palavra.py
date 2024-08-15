@@ -5,7 +5,7 @@ paises = ["alemanha","angola","argelia","argentina","armenia","australia",
           "chile","china","colombia","croacia","cuba","dinamarca","equador",
           "espanha","estadosunidos","finlandia","franca","grecia","india",
           "indonesia","italia","japao","mexico","moruega","paraguai","peru",
-          "polinia","portugal","russia","servia","tailandia","turquia","ucrania",
+          "polonia","portugal","russia","servia","tailandia","turquia","ucrania",
           "uruguai","venezuela"]
 
 animais = ["cachorro", "gato", "elefante", "leao", "tigre", "girafa", "zebra",
