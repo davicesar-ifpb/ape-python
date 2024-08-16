@@ -1,4 +1,9 @@
-for i in range(1,6):
+import os
+
+quantidade_de_arquivos = 5
+
+for i in range(1, quantidade_de_arquivos+1):
     filename = f'q_{i}.py'
-    with open(filename, 'w') as f:
+    diretorio = os.path.dirname(__file__) + f'\\{filename}'
+    with open(diretorio, 'w') as f:
         print(f"{filename} criado")

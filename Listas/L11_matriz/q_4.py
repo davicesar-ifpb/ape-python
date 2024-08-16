@@ -1,8 +1,6 @@
-""" 
-Escreva um programa que preencha uma matriz 3x5 com valores inteiros fornecidos
+""" Escreva um programa que preencha uma matriz 3x5 com valores inteiros fornecidos
 pelo usuário (ou gerados aleatoriamente) e gere a sua transposta. Ao final, imprima as
-duas matrizes (no formato de matriz).
-"""
+duas matrizes (no formato de matriz). """
 
 
 import random

@@ -1,10 +1,8 @@
-""" 
-Escreva um programa que gere aleatoriamente uma matriz quadrada A (cuja ordem
+""" Escreva um programa que gere aleatoriamente uma matriz quadrada A (cuja ordem
 será lida) e gere uma matriz B (da mesma ordem de A), onde cada elemento de B
 corresponderá ao respectivo elemento de A somado a ele os seus índices, sendo que se
 o elemento for de alguma diagonal (principal ou secundária) deverá ser colocado 0
-(zero).
-"""
+(zero). """
 
 
 import random

@@ -1,10 +1,8 @@
-""" 
-Escreva um programa que:
+""" Escreva um programa que:
 • Leia (ou gere aleatoriamente) uma matriz quadrada de ordem N contendo elementos
 inteiros (N será lido);
 • Exiba a matriz lida (no formato de matriz);
-• Exiba os elementos da diagonal principal, isto é, os elementos onde I = J.
-"""
+• Exiba os elementos da diagonal principal, isto é, os elementos onde I = J. """
 
 
 import random

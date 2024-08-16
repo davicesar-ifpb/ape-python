@@ -1,9 +1,7 @@
-""" 
-Escreva um programa que preencha duas matrizes (A e B), ambas de ordem 2x3, com
+""" Escreva um programa que preencha duas matrizes (A e B), ambas de ordem 2x3, com
 valores inteiros fornecidos pelo usuário (ou gerados aleatoriamente). O programa
 deverá somar as duas matrizes, armazenando o resultado em uma terceira matriz (C).
-Ao final, exiba as 3 matrizes (no formato de matriz).
-"""
+Ao final, exiba as 3 matrizes (no formato de matriz). """
 
 
 import random
