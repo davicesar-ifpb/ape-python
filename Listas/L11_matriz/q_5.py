@@ -30,7 +30,16 @@ for i in range(20):
         acima_media += 1
 
 # Exibir matriz
-print("[Nota1,Nota2,Nota3,Media]")
-print(*matriz, sep='\n')
-print("Media geral:", media_geral)
+print(' '* 8, end=' ')
+for i in range(3):
+    print(f"{f'Nota {i}':^8}", end=' ')
+print(f"{'Media':^8}")
+
+for i in range(20):
+    print(f"{f'Aluno {str((i+1)).zfill(2)}':<8}", end=' ')
+    for j in range(4):
+        print(f"{matriz[i][j]:^8}", end=' ')
+    print()
+
+print("\nMedia geral:", media_geral)
 print("Alunos acima da media:", acima_media)
