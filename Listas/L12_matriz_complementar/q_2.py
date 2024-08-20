@@ -14,11 +14,10 @@ soma_modelo = sum(matriz[0])
 soma_diag_p = 0
 soma_diag_s = 0
 
+quadrado_magico = True
 for i in range(ordem):
-    quadrado_magico = True
     soma_coluna = 0
     for j in range(ordem):
-        
         if sum(matriz[i]) != soma_modelo:
             quadrado_magico = False
             break
@@ -31,11 +30,10 @@ for i in range(ordem):
             
         soma_coluna += matriz[j][i]
         
-    if not quadrado_magico:
-        break
-    
     if soma_coluna != soma_modelo:
         quadrado_magico = False
+    
+    if not quadrado_magico:
         break
 
 if soma_diag_p != soma_modelo or soma_diag_s != soma_modelo:

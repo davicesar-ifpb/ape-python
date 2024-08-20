@@ -11,10 +11,10 @@ import random
 
 ordem = 3
 
-matriz = [0] * ordem
-
-for i in range(ordem):
-    matriz[i] = [random.randint(1,9) for _ in range(ordem)]
+matriz = [
+    [random.randint(1,9) for _ in range(ordem)]
+    for _ in range(ordem)
+]
     
 soma_linhas = [0] * ordem
 soma_colunas = [0] * ordem

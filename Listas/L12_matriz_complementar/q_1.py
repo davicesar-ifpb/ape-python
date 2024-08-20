@@ -15,25 +15,34 @@ matriz = [0] * ordem
 for i in range(ordem):
     matriz[i] = list(map(int, input(f"Linha {i}: ").split()))
 
-
+matriz_perm = True
 for i in range(ordem):
     qtd_1_por_linha = 0
-    not_matriz_perm = False
+    qtd_1_por_coluna = 0
+    
     for j in range(ordem):
         if matriz[i][j] not in [0, 1]:
-            not_matriz_perm = True
+            matriz_perm = False
             break
         
         if matriz[i][j] == 1:
             qtd_1_por_linha += 1
         
-        if qtd_1_por_linha > 1:
-            not_matriz_perm = True
-            break    
+        if matriz[j][i] == 1:
+            qtd_1_por_coluna += 1
+
+    if qtd_1_por_linha > 1 or qtd_1_por_linha == 0:
+        matriz_perm = False
         
-    if not_matriz_perm:
-        print("\nNão é uma matriz permutação")
+    if qtd_1_por_coluna == 0 or qtd_1_por_coluna > 1:
+        matriz_perm = False
+        
+    if not matriz_perm:
         break
-else:
+
+if matriz_perm:
     print("\nÉ uma matriz permutação")
+else:
+    print("\nNão é uma matriz permutação")
+    
     

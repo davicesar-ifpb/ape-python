@@ -11,22 +11,31 @@ acidentes (obs: exiba na matriz os cabeçalhos de linha e de coluna mostrando
 a identificação das ruas e das avenidas) """
 import random
 
-matriz = [0] * 9
+matriz = [[0] * 10 for _ in range(9)]
+
+i = 0
+qtd_acidentes = 10
+while True:
+    if i == qtd_acidentes:
+        break
+
+    rua, ave = map(int, input("Digite a rua (30, 38) e a avenida (1, 10): ").split())
+    
+    if rua not in range(30, 39) or ave not in range(1,11):
+        print("Invalido")
+        continue
+
+    matriz[rua - 30][ave - 1] += 1
+    i += 1
+
+
+print(" " * 4, end=' ')
+for i in range(9):
+    print(f"{f'A0{i + 1}':4}", end=' ')
+print(f"{'A10':4}")
 
 for i in range(9):
-    rua = [0] * 10
+    print(f"R{i + 30}", end=' ')
     for j in range(10):
-        #rua[j] = int(input(f"Acidentes no cruzamento da rua {i + 30} com a avenida {j + 1}: "))
-        rua[j] = random.randint(1,9)
-        
-    matriz[i] = rua
-
-rua_label = '||RUAS|||'
-
-print(f"{'AVENIDAS':_^22}")
-for i in range(9):
-    print(rua_label[i], end=' ')
-    for j in range(10):
-        
-        print(matriz[i][j], end=' ')
+        print(f"{matriz[i][j]:4}", end=' ')
     print()
