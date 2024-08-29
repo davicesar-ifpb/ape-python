@@ -1,6 +1,6 @@
 import os
 
-quantidade_de_arquivos = 5
+quantidade_de_arquivos = 6
 
 for i in range(1, quantidade_de_arquivos+1):
     filename = f'q_{i}.py'
