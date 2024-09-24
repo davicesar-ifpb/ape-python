@@ -10,13 +10,13 @@ for i in range(qtd_casos):
     carijo = fase.index("C")
     
     
-    if "X" in range(amarelinho,pintadinha) or "X" in range(pintadinha,amarelinho):
+    if "X" in fase[amarelinho:pintadinha] or "X" in fase[pintadinha:amarelinho]:
         distancia_a_p = tamanho_da_fase
     else:
         distancia_a_p = abs(amarelinho - pintadinha)
 
 
-    if "X" in range(amarelinho,carijo) or "X" in range(carijo, amarelinho):
+    if "X" in fase[amarelinho:carijo] or "X" in fase[carijo: amarelinho]:
         distancia_a_c = tamanho_da_fase
     else:
         distancia_a_c = abs(amarelinho - carijo)
